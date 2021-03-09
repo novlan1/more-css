@@ -1,28 +1,69 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app" ref="appRef">
+    <FilterContrast />
+    <FilterFire />
+    <FilterFuse />
+    <FilterFuseFont />
+    <BehavirorLiHover />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import FilterContrast from './components/filter/contrast';
+import FilterFire from './components/filter/fire';
+import FilterFuse from './components/filter/fuse';
+import FilterFuseFont from './components/filter/fuse-font';
+import BehavirorLiHover from './components/behaviror/li-hover';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    FilterContrast,
+    FilterFire,
+    FilterFuse,
+    FilterFuseFont,
+    BehavirorLiHover
+  },
+  mounted() {
+    console.log(this.$refs.appRef)
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 14px;
+}
+ul,
+li {
+  list-style: none;
+}
+.single-container {
+  overflow: hidden;
+  position: relative;
+  padding: 50px 0;
+  border-bottom: 1px solid #ccc;
+  min-height: 300px;
+}
+.single-container:before {
+  left: 50%;
+  top: 0;
+  padding: 0 10px;
+  border-radius: 0 0 5px 5px;
+  max-width: 300px;
+  line-height: 20px;
+  content: attr(data-title);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+
+  position: absolute;
+  z-index: 99999;
+  color: #fff;
+
+  background-color: #66f;
 }
 </style>
