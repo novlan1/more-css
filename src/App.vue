@@ -21,6 +21,26 @@
     <FigureBoxShadowSingleShadow />
     <FigureClipPath />
     <FigureClipSnake />
+    <FigureConicGradientPieChart />
+    <FigureConicGradientColorTable />
+    <FigureConicGradientWallpaper />
+    <FigureConicGradientRepeating />
+    <FigureConicGradientAnima />
+    <FigureLinearGradientSquareCell />
+    <FigureLinearGradientRibbon />
+    <FigureLinearGradientGrid />
+    <FigureHeart />
+    <!-- <FigureMask /> -->
+    <CompIosSwitch />
+    <CompTabNav />
+    <MaskAngle />
+    <MaskPics />
+    <MaskAnima />
+    <MaskMagicAnima />
+    <MaskMagicTransition />
+    <FigureBoxShadowCurve />
+    <ColorBgBlendMode />
+    <ColorBeautifulWord />
   </div>
 </template>
 
@@ -46,6 +66,26 @@ import FigureBoxShadowFocus from './components/figure/box-shadow-focus';
 import FigureBoxShadowSingleShadow from './components/figure/box-shadow-single-shadow';
 import FigureClipPath from './components/figure/clip-path';
 import FigureClipSnake from './components/figure/clip-snake';
+import FigureConicGradientPieChart from './components/figure/conic-gradient-pie-chart';
+import FigureConicGradientColorTable from './components/figure/conic-gradient-color-table';
+import FigureConicGradientWallpaper from './components/figure/conic-gradient-wallpaper';
+import FigureConicGradientRepeating from './components/figure/conic-gradient-repeating';
+import FigureConicGradientAnima from './components/figure/conic-gradient-anima';
+import FigureLinearGradientSquareCell from './components/figure/linear-gradient-square-cell'
+import FigureLinearGradientRibbon from './components/figure/linear-gradient-ribbon';
+import FigureLinearGradientGrid from './components/figure/linear-gradient-grid';
+import FigureHeart from './components/figure/transform-heart';
+import CompIosSwitch from './components/component/ios-switch'
+import CompTabNav from './components/component/tab-nav';
+import MaskAngle from './components/behaviror/mask-angle';
+import MaskPics from './components/behaviror/mask-pics';
+import MaskAnima from './components/behaviror/mask-anima';
+import MaskMagicAnima from './components/behaviror/mask-magic-anima';
+import MaskMagicTransition from './components/behaviror/mask-magic-transition';
+import FigureBoxShadowCurve from './components/figure/box-shadow-curve';
+import ColorBgBlendMode from './components/color/background-blend-mode';
+import ColorBeautifulWord from './components/color/beautiful-word';
+// import FigureMask from './components/figure/mask';
 
 export default {
   name: 'App',
@@ -70,7 +110,27 @@ export default {
     FigureBoxShadowFocus,
     FigureBoxShadowSingleShadow,
     FigureClipPath,
-    FigureClipSnake
+    FigureClipSnake,
+    FigureConicGradientPieChart,
+    FigureConicGradientColorTable,
+    FigureConicGradientWallpaper,
+    FigureConicGradientRepeating,
+    FigureConicGradientAnima,
+    FigureLinearGradientSquareCell,
+    FigureLinearGradientRibbon,
+    FigureLinearGradientGrid,
+    FigureHeart,
+    CompIosSwitch,
+    CompTabNav,
+    // FigureMask,
+    MaskAngle,
+    MaskPics,
+    MaskAnima,
+    MaskMagicAnima,
+    MaskMagicTransition,
+    FigureBoxShadowCurve,
+    ColorBgBlendMode,
+    ColorBeautifulWord,
   },
   mounted() {
   }
