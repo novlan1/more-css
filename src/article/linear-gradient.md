@@ -10,6 +10,8 @@
   - [2.8. 配合mask制作转场动画](#28-配合mask制作转场动画)
   - [2.9. 配合`background-blend-mode`制作图片的hover效果](#29-配合background-blend-mode制作图片的hover效果)
   - [2.10. 动态边框](#210-动态边框)
+  - [2.11 图片切角](#211-图片切角)
+  - [3. 参考资料](#3-参考资料)
 ## 1. 基本语法
 
 ```css
@@ -26,7 +28,7 @@ linear-gradient中度数的意思，0度指向上，45度指向右，不填的�
 
 ### 2.1. 渐变背景
 
-![渐变背景](./../assets/img/linear-gra-demo.gif)
+![渐变背景](https://github.com/novlan1/more-css/raw/master/src/assets/img/linear-gra-demo.gif)
 
 核心代码
 
@@ -49,7 +51,7 @@ linear-gradient中度数的意思，0度指向上，45度指向右，不填的�
 
 ### 2.2. 渐变文本
 
-![渐变文本](./../assets/img/linear-gra-demo2.gif)
+![渐变文本](https://github.com/novlan1/more-css/raw/master/src/assets/img/linear-gra-demo2.gif)
 
 核心代码
 
@@ -79,7 +81,7 @@ hue-rotate(3.142rad)  /* 3.142弧度旋转，近似一圈，也就是360度 */
 
 ### 2.3. 闪烁文本
 
-![闪烁文本](./../assets/img/linear-gra-demo7.gif)
+![闪烁文本](https://github.com/novlan1/more-css/raw/master/src/assets/img/linear-gra-demo7.gif)
 
 核心代码
 
@@ -105,7 +107,7 @@ hue-rotate(3.142rad)  /* 3.142弧度旋转，近似一圈，也就是360度 */
 ### 2.4. 波浪线
 
 
-![波浪线](./../assets/img/linear-gra-demo6.gif)
+![波浪线](https://github.com/novlan1/more-css/raw/master/src/assets/img/linear-gra-demo6.gif)
 
 
 核心代码
@@ -146,7 +148,7 @@ hue-rotate(3.142rad)  /* 3.142弧度旋转，近似一圈，也就是360度 */
 
 ### 2.5. 方格背景
 
-![方格背景](./../assets/img/linear-gra-demo5.gif)
+![方格背景](https://github.com/novlan1/more-css/raw/master/src/assets/img/linear-gra-demo5.gif)
 
 核心代码
 
@@ -170,7 +172,7 @@ hue-rotate(3.142rad)  /* 3.142弧度旋转，近似一圈，也就是360度 */
 
 ### 2.6. 方格彩带
 
-![方格彩带](./../assets/img/linear-gra-demo5.gif)
+![方格彩带](https://github.com/novlan1/more-css/raw/master/src/assets/img/linear-gra-demo4.gif)
 
 核心代码
 
@@ -193,7 +195,7 @@ hue-rotate(3.142rad)  /* 3.142弧度旋转，近似一圈，也就是360度 */
 
 ### 2.7. 网格背景
 
-![网格背景](./../assets/img/linear-gra-demo8.png)
+![网格背景](https://github.com/novlan1/more-css/raw/master/src/assets/img/linear-gra-demo8.png)
 
 核心代码：
 
@@ -232,7 +234,7 @@ hue-rotate(3.142rad)  /* 3.142弧度旋转，近似一圈，也就是360度 */
 
 ### 2.8. 配合mask制作转场动画
 
-![配合mask制作转场动画](./../assets/img/linear-gra-demo10.gif)
+![配合mask制作转场动画](https://github.com/novlan1/more-css/raw/master/src/assets/img/linear-gra-demo10.gif)
 
 核心代码
 
@@ -251,7 +253,7 @@ hue-rotate(3.142rad)  /* 3.142弧度旋转，近似一圈，也就是360度 */
 
 ### 2.9. 配合`background-blend-mode`制作图片的hover效果
 
-![制作图片的hover效果](./../assets/img/linear-gra-demo9.gif)
+![制作图片的hover效果](https://github.com/novlan1/more-css/raw/master/src/assets/img/linear-gra-demo9.gif)
 
 核心代码
 
@@ -274,7 +276,7 @@ hue-rotate(3.142rad)  /* 3.142弧度旋转，近似一圈，也就是360度 */
 ### 2.10. 动态边框
 
 
-![动态边框](./../assets/img/linear-gra-demo11.gif)
+![动态边框](https://github.com/novlan1/more-css/raw/master/src/assets/img/linear-gra-demo11.gif)
 
 利用了`linear-gradient`可以画线的特点。
 
@@ -293,4 +295,40 @@ hue-rotate(3.142rad)  /* 3.142弧度旋转，近似一圈，也就是360度 */
 }
 ```
 
+### 2.11 图片切角
+
+![图片切角](./../assets/img/linear-gra-demo12.png)
+
+其实是四个背景的加和，每个小背景各占四分之一。
+
+核心代码
+
+```scss
+.angle {
+  background: 
+    linear-gradient(135deg, transparent 15px, deeppink 0) top left,
+    linear-gradient(-135deg, transparent 15px, deeppink 0) top right,
+    linear-gradient(-45deg, transparent 15px, deeppink 0) bottom right,
+    linear-gradient(45deg, transparent 15px, deeppink 0) bottom left;
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
+}
+.mask {
+  background: url($img) no-repeat;
+  background-size: cover;
+  mask: 
+    linear-gradient(135deg, transparent 15px, #fff 0) top left,
+    linear-gradient(-135deg, transparent 15px, #fff 0) top right,
+    linear-gradient(-45deg, transparent 15px, #fff 0) bottom right,
+    linear-gradient(45deg, transparent 15px, #fff 0) bottom left;
+  mask-size: 50% 50%;
+  mask-repeat: no-repeat;
+}
+```
+
+
+### 3. 参考资料
+
+- [linear-gradient](https://github.com/novlan1/more-css/blob/master/src/article/linear-gradient.md)
+- [神奇的CSS](https://novlan1.github.io/more-css/)
 
