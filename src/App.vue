@@ -4,7 +4,7 @@
     <FilterFire />
     <FilterFuse />
     <FilterFuseFont />
-    <BehavirorLiHover />
+    <BehaviorLiHover />
     <MixBlend />
     <MixBlendWord />
     <ColorSelection />
@@ -41,6 +41,30 @@
     <FigureBoxShadowCurve />
     <ColorBgBlendMode />
     <ColorBeautifulWord />
+    <FigureAnimaSwing />
+    <LayoutClipPath />
+    <LayoutFloatAround />
+    <LayoutReverseText />
+    <LayoutTransReverseText />
+    <LayoutTransHalfPx />
+    <LayoutWritingMode />
+    <div class="behavior">
+      <BehaviorEmptyState />
+      <BehaviorFocusWithin />
+      <BehaviorHoverTips />
+      <BehaviorDynamicBorder />
+      <BehaviorMouseFollowing />
+      <BehaviorClearAttr />
+      <BehaviorClearChild />
+      <BehaviorFormValid />
+      <BehaviorBeautiSelection />
+      <BehaviorAnimationDealy />
+      <BehaviorAutoHeight />
+      <BehaviorObjectFit />
+      <BehaviorPositionSticky />
+      <BehaviorTextAlignLast />
+      <BehaviorBoxShadowRainbow />
+    </div>
   </div>
 </template>
 
@@ -49,11 +73,11 @@ import FilterContrast from './components/filter/contrast';
 import FilterFire from './components/filter/fire';
 import FilterFuse from './components/filter/fuse';
 import FilterFuseFont from './components/filter/fuse-font';
-import BehavirorLiHover from './components/behaviror/li-hover';
+import BehaviorLiHover from './components/behavior/li-hover';
 import MixBlend from './components/mix/mix-blend.vue';
 import MixBlendWord from './components/mix/mix-blend-word.vue';
 import ColorSelection from './components/color/selection';
-import ColorSignal from './components/color/color-signal';
+import ColorSignal from './components/color/colorful-signal-bar';
 import FilterBlur from './components/filter/blur';
 import InvertHueRotate from './components/filter/invert-hue-rotate';
 import FilterGrayScale from './components/filter/grayscale';
@@ -77,14 +101,38 @@ import FigureLinearGradientGrid from './components/figure/linear-gradient-grid';
 import FigureHeart from './components/figure/transform-heart';
 import CompIosSwitch from './components/component/ios-switch'
 import CompTabNav from './components/component/tab-nav';
-import MaskAngle from './components/behaviror/mask-angle';
-import MaskPics from './components/behaviror/mask-pics';
-import MaskAnima from './components/behaviror/mask-anima';
-import MaskMagicAnima from './components/behaviror/mask-magic-anima';
-import MaskMagicTransition from './components/behaviror/mask-magic-transition';
+import MaskAngle from './components/behavior/mask-angle';
+import MaskPics from './components/behavior/mask-pics';
+import MaskAnima from './components/behavior/mask-anima';
+import MaskMagicAnima from './components/behavior/mask-magic-anima';
+import MaskMagicTransition from './components/behavior/mask-magic-transition';
 import FigureBoxShadowCurve from './components/figure/box-shadow-curve';
 import ColorBgBlendMode from './components/color/background-blend-mode';
 import ColorBeautifulWord from './components/color/beautiful-word';
+import FigureAnimaSwing from './components/figure/animation-swing';
+
+import LayoutClipPath from './components/layout/cilp-path';
+import LayoutFloatAround from './components/layout/float-around';
+import LayoutReverseText from './components/layout/letter-spacing-reverse-text';
+import LayoutTransReverseText from './components/layout/transform-reverse-text';
+import LayoutTransHalfPx from './components/layout/transform-half-px';
+import LayoutWritingMode from './components/layout/writing-mode';
+
+import BehaviorEmptyState from './components/behavior/empty-state';
+import BehaviorFocusWithin from './components/behavior/focus-within';
+import BehaviorHoverTips from './components/behavior/hover-tips';
+import BehaviorDynamicBorder from './components/behavior/dynamic-border';
+import BehaviorMouseFollowing from './components/behavior/mouse-following';
+import BehaviorClearAttr from './components/behavior/clear-attr';
+import BehaviorClearChild from './components/behavior/nth-child';
+import BehaviorFormValid from './components/behavior/form-valid';
+import BehaviorBeautiSelection from './components/behavior/beauti-selection';
+import BehaviorAnimationDealy from './components/behavior/animation-delay';
+import BehaviorAutoHeight from './components/behavior/auto-height';
+import BehaviorObjectFit from './components/behavior/object-fit';
+import BehaviorPositionSticky from './components/behavior/position-sticky';
+import BehaviorTextAlignLast from './components/behavior/text-align-last';
+import BehaviorBoxShadowRainbow from './components/color/box-shadow-rainbow';
 // import FigureMask from './components/figure/mask';
 
 export default {
@@ -94,7 +142,7 @@ export default {
     FilterFire,
     FilterFuse,
     FilterFuseFont,
-    BehavirorLiHover,
+    BehaviorLiHover,
     MixBlend,
     MixBlendWord,
     ColorSelection,
@@ -131,6 +179,28 @@ export default {
     FigureBoxShadowCurve,
     ColorBgBlendMode,
     ColorBeautifulWord,
+    FigureAnimaSwing,
+    LayoutClipPath,
+    LayoutFloatAround,
+    LayoutReverseText,
+    LayoutTransReverseText,
+    LayoutTransHalfPx,
+    LayoutWritingMode,
+    BehaviorEmptyState,
+    BehaviorFocusWithin,
+    BehaviorHoverTips,
+    BehaviorDynamicBorder,
+    BehaviorMouseFollowing,
+    BehaviorClearAttr,
+    BehaviorClearChild,
+    BehaviorFormValid,
+    BehaviorBeautiSelection,
+    BehaviorAnimationDealy,
+    BehaviorAutoHeight,
+    BehaviorObjectFit,
+    BehaviorPositionSticky,
+    BehaviorTextAlignLast,
+    BehaviorBoxShadowRainbow,
   },
   mounted() {
   }
@@ -174,11 +244,27 @@ li {
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 
+  background-color: #66f;
+}
+
+.single-container:after {
+  right: 0;
+  bottom: 0;
+  padding: 5px 10px;
+  border-top-left-radius: 5px;
+  background-color: #ccc;
+  font-weight: 700;
+  font-size: 16px;
+}
+.behavior .single-container:after {
+  content: "行为";
+}
+
+.single-container:after,
+.single-container:before {
   position: absolute;
   z-index: 99999;
   color: #fff;
-
-  background-color: #66f;
 }
 .flex-ct-x {
   display: -webkit-flex;
