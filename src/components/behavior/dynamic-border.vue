@@ -1,6 +1,6 @@
 <template>
 	<div class="single-container flex-ct-x" data-title="使用:hover控制悬浮边框">
-		<div class="dynamic-border">iCSS</div>
+		<div class="dynamic-border">MIKE</div>
 	</div>
 </template>
 

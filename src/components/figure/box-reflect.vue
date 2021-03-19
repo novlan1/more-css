@@ -1,52 +1,52 @@
 <template>
-  <div class="single-container">
+  <div class="single-container" data-title="使用box-reflex制作艺术图案">
     <div class="g-wrap1">
     <div class="g-wrap2">
         <div class="g-wrap3">
             <div class="g-wrap4"></div>
+            </div>
         </div>
     </div>
-</div>
 
-<div class="g-wrap1 radial">
-    <div class="g-wrap2">
-        <div class="g-wrap3">
-            <div class="g-wrap4"></div>
+    <div class="g-wrap1 radial">
+        <div class="g-wrap2">
+            <div class="g-wrap3">
+                <div class="g-wrap4"></div>
+            </div>
         </div>
     </div>
-</div>
 
-<div class="g-wrap1 negative">
-    <div class="g-wrap2">
-        <div class="g-wrap3">
-            <div class="g-wrap4"></div>
+    <div class="g-wrap1 negative">
+        <div class="g-wrap2">
+            <div class="g-wrap3">
+                <div class="g-wrap4"></div>
+            </div>
         </div>
     </div>
-</div>
 
-<div class="g-wrap1 line">
-    <div class="g-wrap2">
-        <div class="g-wrap3">
-            <div class="g-wrap4"></div>
+    <div class="g-wrap1 line">
+        <div class="g-wrap2">
+            <div class="g-wrap3">
+                <div class="g-wrap4"></div>
+            </div>
         </div>
     </div>
-</div>
 
-<div class="g-wrap1 line2">
-    <div class="g-wrap2">
-        <div class="g-wrap3">
-            <div class="g-wrap4"></div>
+    <div class="g-wrap1 line2">
+        <div class="g-wrap2">
+            <div class="g-wrap3">
+                <div class="g-wrap4"></div>
+            </div>
         </div>
     </div>
-</div>
 
-<div class="g-wrap1 line3">
-    <div class="g-wrap2">
-        <div class="g-wrap3">
-            <div class="g-wrap4"></div>
+    <div class="g-wrap1 line3">
+        <div class="g-wrap2">
+            <div class="g-wrap3">
+                <div class="g-wrap4"></div>
+            </div>
         </div>
     </div>
-</div>
   </div>
 </template>
 <script>
