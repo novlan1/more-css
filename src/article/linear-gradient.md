@@ -11,7 +11,7 @@
   - [2.9. 配合`background-blend-mode`制作图片的hover效果](#29-配合background-blend-mode制作图片的hover效果)
   - [2.10. 动态边框](#210-动态边框)
   - [2.11 图片切角](#211-图片切角)
-  - [3. 参考资料](#3-参考资料)
+- [3. 参考资料](#3-参考资料)
 ## 1. 基本语法
 
 ```css
@@ -297,7 +297,7 @@ hue-rotate(3.142rad)  /* 3.142弧度旋转，近似一圈，也就是360度 */
 
 ### 2.11 图片切角
 
-![图片切角](./../assets/img/linear-gra-demo12.png)
+![图片切角](https://github.com/novlan1/more-css/raw/master/src/assets/img/linear-gra-demo12.png)
 
 其实是四个背景的加和，每个小背景各占四分之一。
 
@@ -327,7 +327,7 @@ hue-rotate(3.142rad)  /* 3.142弧度旋转，近似一圈，也就是360度 */
 ```
 
 
-### 3. 参考资料
+## 3. 参考资料
 
 - [linear-gradient](https://github.com/novlan1/more-css/blob/master/src/article/linear-gradient.md)
 - [神奇的CSS](https://novlan1.github.io/more-css/)

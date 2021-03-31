@@ -29,6 +29,8 @@
     <FigureLinearGradientSquareCell />
     <FigureLinearGradientRibbon />
     <FigureLinearGradientGrid />
+    <LinearGraStripeText />
+    
     <FigureHeart />
     <!-- <FigureMask /> -->
     <CompIosSwitch />
@@ -133,6 +135,7 @@ import BehaviorObjectFit from './components/behavior/object-fit';
 import BehaviorPositionSticky from './components/behavior/position-sticky';
 import BehaviorTextAlignLast from './components/behavior/text-align-last';
 import BehaviorBoxShadowRainbow from './components/color/box-shadow-rainbow';
+import LinearGraStripeText from './components/figure/linear-gradient-stripe-text'
 // import FigureMask from './components/figure/mask';
 
 export default {
@@ -201,6 +204,7 @@ export default {
     BehaviorPositionSticky,
     BehaviorTextAlignLast,
     BehaviorBoxShadowRainbow,
+    LinearGraStripeText,
   },
   mounted() {
   }
